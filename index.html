@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hack For Her</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #fff0f6, #ffe4ef);
+      color: #4a1c2f;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: rgba(255, 240, 246, 0.9);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    .logo { font-weight: 800; font-size: 1.4rem; color: #d63384; }
+    .nav-links a {
+      margin-left: 2rem;
+      font-weight: 500;
+      color: #7a2d4f;
+    }
+    .nav-links a:hover { color: #d63384; }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: radial-gradient(circle at top, #ffd6e8, #fff0f6);
+    }
+    .hero h1 {
+      font-size: 3.8rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #d63384;
+    }
+    .hero p {
+      max-width: 700px;
+      font-size: 1.15rem;
+      color: #6b2a46;
+    }
+    .hero .cta {
+      margin-top: 2.5rem;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(135deg, #ff8dc7, #ff5fa2);
+      color: white;
+      border-radius: 40px;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(255, 95, 162, 0.4);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 3rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #d63384;
+      text-align: center;
+    }
+    section p { max-width: 900px; margin: auto; }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(214, 51, 132, 0.15);
+      text-align: center;
+    }
+    .card h3 {
+      color: #d63384;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    /* REGISTER */
+    .register {
+      text-align: center;
+      background: linear-gradient(135deg, #ffd6e8, #ffe4ef);
+      border-radius: 30px;
+    }
+    .register a {
+      display: inline-block;
+      margin-top: 1.8rem;
+      padding: 1rem 2.5rem;
+      border-radius: 40px;
+      background: #d63384;
+      color: white;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem;
+      color: #8c3a5f;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Hack For Her</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#team">Team</a>
+      <a href="#register">Register</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Hack For Her</h1>
+    <p>A virtual, girls-only hackathon empowering young women to explore technology, build confidently, and lead boldly in a welcoming community.</p>
+    <a class="cta" href="#register">Register</a>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Hack For Her was created by three high school girls from Mountain House High School after organizing MountainHacks, the Tri-Valley’s largest hackathon with over 200 participants. While MountainHacks was a huge success, one issue stood out: there were very few girls participating.
+      <br><br>
+      This inspired the creation of Hack For Her — a girls-only, virtual hackathon taking place from <strong>February 9–15</strong>. Our mission is to remove barriers like intimidation, lack of access, and fear of judgment by creating a supportive environment where girls can learn, collaborate, and thrive in tech.
+    </p>
+  </section>
+
+  <section id="sponsors">
+    <h2>Sponsors</h2>
+    <p style="text-align:center">By sponsoring Hack For Her, your organization directly supports the next generation of women in STEM while gaining meaningful brand visibility.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Custom Opportunities</h3>
+        <p>
+          Sponsor prizes or challenges<br>
+          Host workshops or talks<br>
+          Flexible sponsorship options
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <div class="grid">
+      <div class="card">Organizer Name<br><small>Co-Founder</small></div>
+      <div class="card">Organizer Name<br><small>Marketing Lead</small></div>
+      <div class="card">Organizer Name<br><small>Operations Lead</small></div>
+    </div>
+  </section>
+
+  <section id="register" class="register">
+    <h2>Register</h2>
+    <p>Join 100+ girls from across the Bay Area in a week-long celebration of creativity, learning, and innovation.</p>
+    <a href="#">Registration Opening Soon</a>
+  </section>
+
+  <footer>
+    © 2026 Hack For Her · Made with 💖 for girls in tech
+  </footer>
+
+</body>
+</html>
