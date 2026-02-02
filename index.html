@@ -1,191 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hack For Her</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #fff0f6, #ffe4ef);
-      color: #4a1c2f;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    a { color: inherit; text-decoration: none; }
-
-    /* NAV */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 3rem;
-      background: rgba(255, 240, 246, 0.9);
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(10px);
-      z-index: 10;
-    }
-    .logo { font-weight: 800; font-size: 1.4rem; color: #d63384; }
-    .nav-links a {
-      margin-left: 2rem;
-      font-weight: 500;
-      color: #7a2d4f;
-    }
-    .nav-links a:hover { color: #d63384; }
-
-    /* HERO */
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 2rem;
-      background: radial-gradient(circle at top, #ffd6e8, #fff0f6);
-    }
-    .hero h1 {
-      font-size: 3.8rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      color: #d63384;
-    }
-    .hero p {
-      max-width: 700px;
-      font-size: 1.15rem;
-      color: #6b2a46;
-    }
-    .hero .cta {
-      margin-top: 2.5rem;
-      padding: 1rem 2.5rem;
-      background: linear-gradient(135deg, #ff8dc7, #ff5fa2);
-      color: white;
-      border-radius: 40px;
-      font-weight: 600;
-      box-shadow: 0 10px 25px rgba(255, 95, 162, 0.4);
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 5rem 3rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: #d63384;
-      text-align: center;
-    }
-    section p { max-width: 900px; margin: auto; }
-
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    .card {
-      background: #ffffff;
-      padding: 2.5rem;
-      border-radius: 24px;
-      box-shadow: 0 15px 40px rgba(214, 51, 132, 0.15);
-      text-align: center;
-    }
-    .card h3 {
-      color: #d63384;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    /* REGISTER */
-    .register {
-      text-align: center;
-      background: linear-gradient(135deg, #ffd6e8, #ffe4ef);
-      border-radius: 30px;
-    }
-    .register a {
-      display: inline-block;
-      margin-top: 1.8rem;
-      padding: 1rem 2.5rem;
-      border-radius: 40px;
-      background: #d63384;
-      color: white;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2.5rem;
-      color: #8c3a5f;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hack For Her</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+<!-- External CSS -->
+<link rel="stylesheet" href="styless.css" />
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
-    <div class="logo">Hack For Her</div>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#sponsors">Sponsors</a>
-      <a href="#team">Team</a>
-      <a href="#register">Register</a>
-    </div>
+    <a href="#home" class="active">Home</a>
+    <a href="#About">About</a>
+    <a href="#Details">Details</a>
+    <a href="#Sponsors">Sponsors</a>
+    <a href="#Team">Team</a>
+    <a href="#Register">Register</a>
   </nav>
 
-  <div class="hero">
-    <h1>Hack For Her</h1>
-    <p>A virtual, girls-only hackathon empowering young women to explore technology, build confidently, and lead boldly in a welcoming community.</p>
-    <a class="cta" href="#register">Register</a>
-  </div>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Hack For Her was created by three high school girls from Mountain House High School after organizing MountainHacks, the Tri-Valley’s largest hackathon with over 200 participants. While MountainHacks was a huge success, one issue stood out: there were very few girls participating.
-      <br><br>
-      This inspired the creation of Hack For Her — a girls-only, virtual hackathon taking place from <strong>February 9–15</strong>. Our mission is to remove barriers like intimidation, lack of access, and fear of judgment by creating a supportive environment where girls can learn, collaborate, and thrive in tech.
-    </p>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="home-content">
+      <div class="bubble-box">
+        <h1>Hack For Her</h1>
+        <p> A virtual, girls-only hackathon empowering young women to explore technology, build confidently, and lead boldly in a welcoming community.</p>
+      </div>
+      <div class="buttons">
+        <a href="https://discord.gg/example" class="btn">Join Discord</a>
+        <a href="#Register" class="btn">Register</a>
+      </div>
+    </div>
   </section>
 
-  <section id="sponsors">
-    <h2>Sponsors</h2>
-    <p style="text-align:center">By sponsoring Hack For Her, your organization directly supports the next generation of women in STEM while gaining meaningful brand visibility.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Custom Opportunities</h3>
+  <!-- About Section -->
+  <section id="About">
+    <div class="about-container">
+      <div class="about-panel about-left">
+        <h2>About Hack For Her</h2>
         <p>
-          Sponsor prizes or challenges<br>
-          Host workshops or talks<br>
-          Flexible sponsorship options
+          Hack For Her was created by three high school girls from Mountain House High School after organizing MountainHacks, the Tri-Valley’s largest hackathon with over 200 participants. While MountainHacks was a huge success, very few girls participated — and that sparked an idea.
+        </p>
+      </div>
+      <div class="about-panel about-right">
+        <h1>Our Mission</h1>
+        <p>
+          Our mission is to remove barriers like intimidation, lack of access, and fear of judgment by creating a supportive environment where girls can learn, collaborate, and thrive in tech.
         </p>
       </div>
     </div>
   </section>
 
-  <section id="team">
-    <h2>Our Team</h2>
-    <div class="grid">
-      <div class="card">Organizer Name<br><small>Co-Founder</small></div>
-      <div class="card">Organizer Name<br><small>Marketing Lead</small></div>
-      <div class="card">Organizer Name<br><small>Operations Lead</small></div>
+  <!-- Details Section -->
+  <section id="Details">
+    <div class="details-header">
+      <h2>Event Details</h2>
+    </div>
+    <div class="timeline-horizontal">
+      <div class="timeline-item top">
+        <div class="content">
+          <h3>International + Virtual</h3>
+          <p>Join us from everywhere on February 9–15</p>
+        </div>
+      </div>
+      <div class="timeline-item bottom">
+        <div class="content">
+          <h3>Eligibility</h3>
+          <p>Open to all highschoolers and college students</p>
+        </div>
+      </div>
+      <div class="timeline-item top">
+        <div class="content">
+          <h3>Workshops + Speakers</h3>
+          <p>Interactive sessions on coding, design, and project development. Meet women in STEM!</p>
+        </div>
+      </div>
+      <div class="timeline-item bottom">
+        <div class="content">
+          <h3>Prizes</h3>
+          <p>Top teams will win amazing prizes for tackling real problems!</p>
+        </div>
+      </div>
+    </div>
+    <p class="timeline-note">
+      Participants can hack <b>solo</b> or in teams of up to <b>four</b>. Brainstorm, program, and present a demo video for judges!
+    </p>
+  </section>
+
+  <!-- Sponsors Section -->
+  <section id="Sponsors">
+    <div class="sponsors-box">
+      <h2>Our Sponsors</h2>
+      <p> We are grateful for the support of our sponsors who help make Hack For Her possible. Thank you for supporting the next generation of female leaders in tech! </p>
+      <div class="sponsors-container">
+        <div class="sponsor-box">
+          <img src="sponsor1.png" alt="Sponsor 1" />
+        </div>
+        <div class="sponsor-box">
+          <img src="sponsor2.png" alt="Sponsor 2" />
+        </div>
+        <div class="sponsor-box">
+          <img src="sponsor3.png" alt="Sponsor 3" />
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="register" class="register">
-    <h2>Register</h2>
-    <p>Join 100+ girls from across the Bay Area in a week-long celebration of creativity, learning, and innovation.</p>
-    <a href="#">Registration Opening Soon</a>
+  <!-- Team Section -->
+  <section id="Team">
+    <h2>Meet the Team</h2>
+    <p>
+      Our team is made up of passionate high school girls who strive to make a difference in the tech community.
+    </p>
+    <div class="team-container">
+      <div class="team-box">
+        <img src="member1.jpg" alt="Team Member 1" />
+        <h3>Gia Vimal</h3>
+        <p>(Description Here:)</p>
+      </div>
+      <div class="team-box">
+        <img src="member2.jpg" alt="Team Member 2" />
+        <h3>Ishita Ahelleya</h3>
+        <p>(Description Here:)</p>
+      </div>
+      <div class="team-box">
+        <img src="member3.jpg" alt="Team Member 3" />
+        <h3>Anvita Kovvuri</h3>
+        <p>(Description Here:)</p>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    © 2026 Hack For Her · Made with 💖 for girls in tech
-  </footer>
+  <!-- Register Section -->
+  <section id="Register">
+    <div class="register-card">
+      <p class="register-subtitle">Register</p>
+      <h2>Take the next step!</h2>
+      <p class="register-text">
+        Join 100+ girls from across the Bay Area in a week-long celebration of creativity, learning, and innovation.
+      </p>
+      <div class="register-buttons">
+        <a href="https://hackforher.example.com/register" class="btn-primary">Register Here</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Scripts -->
+  <script src="intro.js"></script>
 </body>
 </html>
